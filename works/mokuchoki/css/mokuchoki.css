@@ -90,7 +90,7 @@ a:hover img {
 
 .main-visual .visual-txt-area .catchphrase p {
   margin-top: 20px;
-  font-size: calc(var(--fz-h1) * 0.6);
+  font-size: calc(var(--fz-h1) * 0.58);
   line-height: 2;
 }
 
