@@ -1,0 +1,33 @@
+/* Component
+   ============================================ */
+
+/* Layout
+   ============================================ */
+
+.inner {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================
+   タブレット
+   ============================================ */
+
+@media screen and (max-width: 1000px) {
+
+  /* Layout
+   ============================================ */
+
+  .inner {
+    width: 92%;
+  }
+}
