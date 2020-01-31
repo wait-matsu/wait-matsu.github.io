@@ -295,7 +295,8 @@ footer a:hover {
      ---------------------------------------- */
 
   .main-visual {
-    min-height: 450px;
+    min-height: 400px;
+    height: 400px;
     background-position: -270px;
   }
 
