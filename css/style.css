@@ -127,8 +127,26 @@ main .inner>section[class] {
 
 @media screen and (max-width: 560px) {
 
+  /* 変数
+   ============================================ */
+  :root {
+    --fz-h1: 30px;
+  }
+
+
+  /* メインコンテンツ
+     ============================================ */
+
   main .inner>section[class] {
+    margin-top: 40px;
     text-align: center;
+  }
+
+  /* About
+     ---------------------------------------- */
+
+  .profile-area {
+    margin-top: 30px;
   }
 
   .profile-area .icon {
@@ -143,6 +161,14 @@ main .inner>section[class] {
     width: 100%;
     margin-top: 20px;
   }
+
+  .profile-area .profile .name {
+    font-size: 22px;
+  }
+
+
+  /* Works
+     ---------------------------------------- */
 
   .works .app li {
     width: 46%;
