@@ -52,6 +52,10 @@ h2.top::before {
 /* メインコンテンツ
    ============================================ */
 
+main {
+  padding-bottom: 60px;
+}
+
 main .inner>section[class] {
   margin-top: 60px;
 }
@@ -68,6 +72,80 @@ main .inner>section[class] {
 /* About
    ---------------------------------------- */
 
-   .profile {
-     margin-top: 40px;
-   }
+.profile-area {
+  margin-top: 40px;
+}
+
+.profile-area.flex-box {
+  align-items: flex-start;
+}
+
+.profile-area .icon {
+  width: 18%;
+}
+
+.profile-area .profile {
+  width: 80%;
+}
+
+.profile-area .profile .name {
+  font-size: 26px;
+}
+
+.profile-area .profile .description {
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
+
+
+/* Works
+   ---------------------------------------- */
+
+.works .app {
+  margin-top: 40px;
+}
+
+.works .app li {
+  width: 200px;
+  transition: 0.3s;
+}
+
+.works .app li:hover {
+  opacity: 0.7;
+}
+
+.works .app a figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* ============================================
+   スマートフォン
+   ============================================ */
+
+@media screen and (max-width: 560px) {
+
+  main .inner>section[class] {
+    text-align: center;
+  }
+
+  .profile-area .icon {
+    width: 100%;
+  }
+
+  .profile-area .icon img {
+    margin: 0 auto;
+  }
+
+  .profile-area .profile {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .works .app li {
+    width: 46%;
+  }
+
+}

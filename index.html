@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="./common/fonts/remixicon.css">
   <!-- ページ固有 -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./common/js/common.js" defer></script>
+
   <title>My portfolio</title>
 </head>
 
@@ -19,15 +22,20 @@
   <header>
     <div class="inner">
       <nav>
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul class="global-menu flex-box">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Works</a></li>
           <li class="sns">
-            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i><span class="sp">Twitter</span></a>
           </li>
           <li class="sns">
-            <a href="https://github.com/wait-matsu" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="https://github.com/wait-matsu" target="_blank"><i class="ri-github-fill"></i><span class="sp">GitHub</span></a>
           </li class="sns-link">
         </ul>
       </nav>
@@ -39,16 +47,34 @@
 
     <div class="inner">
 
-    <section class="about">
-      <h1 class="top">About</h1>
+      <section class="about">
+        <h1 class="top">About</h1>
 
-    <div class="profile flex-box">
-      <div class="icon">
-        <img src="./img/icon.png" alt="アイコン">
-      </div>
-      .
-    </div>
-    </section>
+        <div class="profile-area flex-box">
+          <div class="icon">
+            <img src="./img/icon.png" alt="アイコン">
+          </div>
+          <div class="profile">
+            <p class="name">Matsumura Hiro</p>
+            <p class="description">もういくつ寝ると社会人。ツーリングやキャンプによく行きます。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="works">
+        <h1 class="top">Works</h1>
+        <ul class="app flex-box left-4col">
+          <li>
+            <a href="./works/mokuchoki/">
+              <figure>
+                <img src="./works/mokuchoki/img/icon.png" srcset="./works/mokuchoki/img/icon.png 1x,
+                ./works/mokuchoki/img/icon@2x.png 2x" alt="もくちょき">
+              </figure>
+              <figcaption>もくちょき</figcaption>
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
 </body>
