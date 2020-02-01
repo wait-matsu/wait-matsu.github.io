@@ -1,0 +1,73 @@
+/* 変数
+   ============================================ */
+:root {
+  --fz-h1: 36px;
+  --fz-h2: calc(var(--fz-h1) * 0.7);
+}
+
+/* Component
+     ============================================ */
+
+h1.top {
+  position: relative;
+  display: inline-block;
+  font-size: var(--fz-h1);
+  font-family: serif;
+}
+
+h1.top::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 70%;
+  border-bottom: 1px solid #505050;
+}
+
+h2.top {
+  font-size: var(--fz-h2);
+}
+
+h2.top::before {
+  content: counter(section);
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  text-align: center;
+  width: calc(var(--fz-h2) * 1.2);
+  height: calc(var(--fz-h2) * 1.2);
+  margin-right: 5px;
+  border-radius: 50%;
+  color: #2C9CDD;
+  border: 1px solid #2C9CDD;
+  font-size: 0.75em;
+}
+
+/* Layout
+   ============================================ */
+
+
+/* メインコンテンツ
+   ============================================ */
+
+main .inner>section[class] {
+  margin-top: 60px;
+}
+
+/* Main Visual
+   ---------------------------------------- */
+
+.main-visual {
+  height: 300px;
+  background: url(../img/main-visual.png) no-repeat center;
+  background-size: cover;
+}
+
+/* About
+   ---------------------------------------- */
+
+   .profile {
+     margin-top: 40px;
+   }

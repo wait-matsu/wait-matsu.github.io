@@ -16,10 +16,6 @@ h1.base.white {
   color: #fff;
 }
 
-.point {
-  counter-increment: section;
-}
-
 h2.base {
   font-size: var(--fz-h2);
 }
@@ -120,6 +116,7 @@ main>section {
 
 .point {
   padding: 60px 0;
+  counter-increment: section;
 }
 
 .point .description {
@@ -180,6 +177,10 @@ footer {
   padding-top: 60px;
   color: #fff;
   background: linear-gradient(to right, #61BBFF, #AAD4FF);
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 footer a:hover {
@@ -310,7 +311,7 @@ footer a:hover {
 
   .main-visual .visual-txt-area {
     width: 100%;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   }
 
   .main-visual .visual-txt-area .catchphrase {
