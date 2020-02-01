@@ -133,7 +133,7 @@ header .global-menu li.sns a:hover i {
 
   .hamburger-menu {
     position: relative;
-    width: 38px;
+    width: 35px;
     height: 35px;
     margin-right: 5px;
   }
@@ -148,19 +148,19 @@ header .global-menu li.sns a:hover i {
   }
 
   .hamburger-menu span:nth-of-type(1) {
-    top: 5px;
+    top: 4px;
   }
 
   .hamburger-menu span:nth-of-type(2) {
-    top: 17px;
+    top: 15px;
   }
 
   .hamburger-menu span:nth-of-type(3) {
-    top: 29px;
+    top: 26px;
   }
 
   .hamburger-menu.is-active span:nth-of-type(1) {
-    transform: translateY(13px) rotate(-45deg);
+    transform: translateY(11px) rotate(-45deg);
   }
 
   .hamburger-menu.is-active span:nth-of-type(2) {
@@ -168,7 +168,7 @@ header .global-menu li.sns a:hover i {
   }
 
   .hamburger-menu.is-active span:nth-of-type(3) {
-    transform: translateY(-13px) rotate(45deg);
+    transform: translateY(-11px) rotate(45deg);
   }
 
   .hamburger-menu+.global-menu {
@@ -189,7 +189,7 @@ header .global-menu li.sns a:hover i {
     width: 100%;
     margin-left: 0;
     padding: 15px 20px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid #ccc;
   }

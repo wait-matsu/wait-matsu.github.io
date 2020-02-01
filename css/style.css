@@ -142,6 +142,13 @@ main .inner>section[class] {
     text-align: center;
   }
 
+  /* Main Visual
+     ---------------------------------------- */
+
+  .main-visual {
+    height: 250px;
+  }
+
   /* About
      ---------------------------------------- */
 
@@ -169,6 +176,10 @@ main .inner>section[class] {
 
   /* Works
      ---------------------------------------- */
+
+  .works .app {
+    margin-top: 30px;
+  }
 
   .works .app li {
     width: 46%;
