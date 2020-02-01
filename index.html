@@ -13,6 +13,7 @@
   <!-- ページ固有 -->
   <link rel="stylesheet" href="./css/style.css">
 
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="./common/js/common.js" defer></script>
 
   <title>My portfolio</title>
@@ -28,9 +29,9 @@
           <span></span>
         </div>
         <ul class="global-menu flex-box">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Works</a></li>
+          <!-- <li><a href="#">Home</a></li> -->
+          <li><a href="#About">About</a></li>
+          <li><a href="#Works">Works</a></li>
           <li class="sns">
             <a href="#"><i class="ri-twitter-fill"></i><span class="sp">Twitter</span></a>
           </li>
@@ -47,7 +48,7 @@
 
     <div class="inner">
 
-      <section class="about">
+      <section id="About" class="about">
         <h1 class="top">About</h1>
 
         <div class="profile-area flex-box">
@@ -61,7 +62,7 @@
         </div>
       </section>
 
-      <section class="works">
+      <section id="Works" class="works">
         <h1 class="top">Works</h1>
         <ul class="app flex-box left-4col">
           <li>
