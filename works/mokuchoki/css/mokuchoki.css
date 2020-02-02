@@ -220,6 +220,32 @@ footer a:hover {
   font-size: 15px;
 }
 
+/* プライバシーポリシー
+   ============================================ */
+
+.privacy-policy h1.base {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.privacy-policy h2 {
+  font-size: var(--fz-h2);
+}
+
+.privacy-policy .terms {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+}
+
+.privacy-policy .terms p {
+  margin-bottom: 10px;
+}
+
+.privacy-policy .terms .start {
+  text-align: right;
+}
+
 /* ============================================
    タブレット
    ============================================ */
@@ -354,9 +380,9 @@ footer a:hover {
   /* 悩み解決
      ---------------------------------------- */
 
-     .solution {
-      background: url(../img/bg-solution_sp.png) no-repeat center;
-      background-size: cover;
+  .solution {
+    background: url(../img/bg-solution_sp.png) no-repeat center;
+    background-size: cover;
   }
 
   .solution p {
