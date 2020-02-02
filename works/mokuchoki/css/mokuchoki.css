@@ -243,8 +243,13 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-.privacy-policy .terms .start {
+.privacy-policy .terms .start, 
+.privacy-policy .terms .update {
   text-align: right;
+}
+
+.privacy-policy .terms .start {
+  margin-bottom: 5px;
 }
 
 /* ============================================
