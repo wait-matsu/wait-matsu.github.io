@@ -147,6 +147,7 @@ main .inner>section[class] {
 
   .main-visual {
     height: 250px;
+    background-image: url(../img/main-visual_sp.png);
   }
 
   /* About

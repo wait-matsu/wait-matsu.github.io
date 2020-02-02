@@ -337,8 +337,7 @@ footer a:hover {
   .main-visual {
     min-height: 400px;
     height: 400px;
-    background: url(../img/main_visual_sp.png) no-repeat center;
-    background-size: cover;
+    background-image: url(../img/main_visual_sp.png);
   }
 
   .main-visual .visual-txt-area {
