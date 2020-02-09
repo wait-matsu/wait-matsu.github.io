@@ -70,6 +70,43 @@ header .global-menu li.sns a:hover i {
   opacity: 0.7;
 }
 
+/* ページトップボタン */
+a.page-top {
+  position: fixed;
+  right: 5vw;
+  bottom: 5vh;
+  z-index: 10;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #555;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+a.page-top::before {
+  content: "";
+  position: relative;
+  top: 21px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+a.page-top:hover {
+  opacity: 1;
+}
+
+a.page-top.is-not-visible {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Layout
    ============================================ */
 
