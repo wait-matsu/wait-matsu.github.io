@@ -352,7 +352,7 @@ footer a:hover {
      ---------------------------------------- */
 
   .main-visual .catchphrase-area .catchphrase {
-    font-size: 32px;
+    font-size: 30px;
     margin-left: 10px;
   }
 
@@ -371,12 +371,16 @@ footer a:hover {
   }
 
   .main-visual .app-banner-area .banner {
-    width: 250px;
+    width: 220px;
     margin: 20px auto;
   }
 
   /* みちめぐについて
      ---------------------------------------- */
+
+  .about h1.base+div {
+    margin-top: 30px;
+  }
 
   .about .description {
     order: 1;
@@ -395,6 +399,10 @@ footer a:hover {
 
   /* みちめぐの機能一覧
      ---------------------------------------- */
+  #Slider {
+    margin-top: 40px;
+  }
+
   #Slider .slick-next {
     right: 5vw;
   }
@@ -404,31 +412,38 @@ footer a:hover {
     padding-left: 4px;
   }
 
-   /* footer
+  /* 今すぐアプリをダウンロード
+     ---------------------------------------- */
+
+  .app-download-area .img-box.banner img {
+    width: 220px;
+  }
+
+  /* footer
      ============================================ */
 
-     footer {
-      padding-top: 30px;
-    }
-  
-    .footer-links .img-box {
-      width: 100%;
-    }
-  
-    .footer-links .img-box img {
-      margin: 0 auto;
-    }
-  
-    .footer-links>* {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  
-    .footer-links.flex-box {
-      justify-content: space-around;
-    }
-  
-    .footer-links li.title {
-      font-size: 1em;
-    }
+  footer {
+    padding-top: 30px;
+  }
+
+  .footer-links .img-box {
+    width: 100%;
+  }
+
+  .footer-links .img-box img {
+    margin: 0 auto;
+  }
+
+  .footer-links>* {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .footer-links.flex-box {
+    justify-content: space-around;
+  }
+
+  .footer-links li.title {
+    font-size: 1em;
+  }
 }
