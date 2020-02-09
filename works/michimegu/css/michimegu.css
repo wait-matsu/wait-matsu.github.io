@@ -1,0 +1,434 @@
+/* 変数
+   ============================================ */
+:root {
+  --fz-h1: 36px;
+  --fz-h2: calc(var(--fz-h1) * 0.7);
+}
+
+/* Component
+   ============================================ */
+
+h1.base {
+  font-size: var(--fz-h1);
+}
+
+h1.base.white {
+  color: #fff;
+}
+
+h2.base {
+  font-size: var(--fz-h2);
+}
+
+h2.base::before {
+  content: counter(section);
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  text-align: center;
+  width: calc(var(--fz-h2) * 1.2);
+  height: calc(var(--fz-h2) * 1.2);
+  margin-right: 5px;
+  border-radius: 50%;
+  color: #2C9CDD;
+  border: 1px solid #2C9CDD;
+  font-size: 0.75em;
+}
+
+/* Layout
+   ============================================ */
+
+.flex-box.left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.flex-box.right {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.flex-box.left .img-box {
+  order: 1;
+}
+
+.description p+p {
+  margin-top: 5px;
+}
+
+/* Effect
+   ============================================ */
+
+a img {
+  transition: 0.3s;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+/* メインコンテンツ
+   =========================================== */
+
+main {
+  padding-bottom: 60px;
+}
+
+main>section[class] {
+  margin-top: 60px;
+}
+
+main>section>h1.base {
+  text-align: center;
+}
+
+/* Main Visual
+   ---------------------------------------- */
+
+.main-visual {
+  position: relative;
+  height: 70vh;
+  min-height: 550px;
+  padding: 5vh 0;
+  background: url(../img/main_visual.png) no-repeat center;
+  background-size: cover;
+}
+
+.main-visual .catchphrase-area.flex-box {
+  justify-content: flex-start;
+}
+
+.main-visual .catchphrase-area .catchphrase {
+  margin-left: 20px;
+  font-size: 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.main-visual .app-banner-area {
+  position: relative;
+  height: calc(70vh - 200px);
+  padding-left: 400px;
+}
+
+.main-visual .app-ss {
+  position: absolute;
+  left: 80px;
+  bottom: -80px;
+  transform: rotate(17deg);
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.3));
+}
+
+.main-visual .app-banner-area.flex-box {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.main-visual .app-banner-area .banner {
+  margin-bottom: 30px;
+}
+
+/* みちめぐについて
+   ---------------------------------------- */
+
+main section.about {
+  margin-top: 100px;
+}
+
+.about h1.base+div {
+  margin-top: 40px;
+}
+
+.about h1.base+.flex-box {
+  align-items: flex-start;
+}
+
+.about .description {
+  /* innerの横幅 - 画像の横幅 - 余白 */
+  width: calc(100% - 300px - 30px);
+}
+
+.about .img-box {
+  max-width: 300px;
+}
+
+
+/* みちめぐの機能一覧
+   ---------------------------------------- */
+
+#Slider {
+  width: 100%;
+  margin-top: 60px;
+}
+
+#Slider li {
+  display: inline-block;
+  margin: 0 20px;
+  outline: none;
+}
+
+#Slider li .img-box img {
+  margin: auto;
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.3));
+}
+
+#Slider li .img-box+p {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#Slider .slick-slide {
+  transition: 0.3s;
+}
+
+#Slider .slick-slide:not(.slick-current) {
+  opacity: 0.3;
+}
+
+#Slider .slick-arrow {
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: #353535;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#Slider .slick-prev {
+  left: 30vw;
+  padding-left: 4px;
+}
+
+#Slider .slick-next {
+  right: 30vw;
+  padding-left: 4px;
+}
+
+#Slider .slick-next::before {
+  content: "";
+  position: relative;
+  left: 10px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+
+#Slider .slick-prev::before {
+  content: "";
+  position: relative;
+  left: 15px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(-45deg);
+}
+
+
+/* 今すぐアプリをダウンロード
+   ---------------------------------------- */
+
+.app-download-area {
+  padding: 60px 0;
+  background: url(../img/bg_app_download.png) no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.app-download-area h1.base {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.app-download-area .icon img {
+  margin: 40px auto;
+}
+
+.app-download-area .img-box.banner img {
+  display: inline-block;
+}
+
+/* footer
+   ============================================ */
+
+footer {
+  padding-top: 60px;
+  color: #fff;
+  background: linear-gradient(to right, #7AC76D, #A1E796);
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-bottom: 40px;
+}
+
+.footer-links.flex-box {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-links>* {
+  margin-left: 3vw;
+}
+
+.footer-links li.title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer-links li:not(.title) {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.footer-bottom {
+  padding: 5px 0;
+  border-top: 1px solid #fff;
+}
+
+.footer-bottom .copyright {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* ============================================
+   タブレット
+   ============================================ */
+
+@media screen and (max-width: 1000px) {
+
+  /* 変数
+     ============================================ */
+  :root {
+    --fz-h1: 28px;
+  }
+
+  /* メインコンテンツ
+     ============================================ */
+
+  /* Main Visual
+     ---------------------------------------- */
+
+  .main-visual .catchphrase {
+    font-size: 40px;
+  }
+
+  .main-visual .app-ss {
+    max-width: 40%;
+    bottom: -8vw;
+  }
+
+}
+
+
+/* ============================================
+   スマートフォン
+   ============================================ */
+
+@media screen and (max-width: 560px) {
+
+  /* 変数
+       ============================================ */
+  :root {
+    --fz-h1: 24px;
+  }
+
+  /* メインコンテンツ
+     ============================================ */
+
+  /* Main Visual
+     ---------------------------------------- */
+
+  .main-visual .catchphrase-area .catchphrase {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+
+  .main-visual .catchphrase-area .icon {
+    width: 100px;
+  }
+
+  .main-visual .app-banner-area {
+    padding: 0;
+  }
+
+  .main-visual .app-ss {
+    position: static;
+    max-width: 60%;
+    margin: 20px auto;
+  }
+
+  .main-visual .app-banner-area .banner {
+    width: 250px;
+    margin: 20px auto;
+  }
+
+  /* みちめぐについて
+     ---------------------------------------- */
+
+  .about .description {
+    order: 1;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .about .img-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about .img-box img {
+    margin: auto;
+  }
+
+  /* みちめぐの機能一覧
+     ---------------------------------------- */
+  #Slider .slick-next {
+    right: 5vw;
+  }
+
+  #Slider .slick-prev {
+    left: 5vw;
+    padding-left: 4px;
+  }
+
+   /* footer
+     ============================================ */
+
+     footer {
+      padding-top: 30px;
+    }
+  
+    .footer-links .img-box {
+      width: 100%;
+    }
+  
+    .footer-links .img-box img {
+      margin: 0 auto;
+    }
+  
+    .footer-links>* {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .footer-links.flex-box {
+      justify-content: space-around;
+    }
+  
+    .footer-links li.title {
+      font-size: 1em;
+    }
+}

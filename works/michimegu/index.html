@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=”description”
+    content=”日本全国の道の駅を巡って、みちめぐオリジナルスタンプを集めよう！ドライブ、ツーリング、サイクリングの際に現在地から近場の道の駅を探して休憩スポットを簡単に見つけることができます。”>
+
+  <!-- 共通 -->
+  <link rel="stylesheet" href="../../common/css/reset.css">
+  <link rel="stylesheet" href="../../common/css/common.css">
+  <!-- ページ固有 -->
+  <!-- <link rel="shortcut icon" href="./favicon.ico"> -->
+  <link rel="stylesheet" href="./css/michimegu.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+
+  <title>みちめぐ - 日本全国道の駅巡りスタンプラリー</title>
+</head>
+
+<body>
+  <main>
+    <div class="main-visual">
+      <div class="inner">
+        <div class="visual-txt-area">
+
+          <div class="catchphrase-area flex-box">
+            <div class="icon">
+              <img src="./img/icon.png" srcset="img/icon.png 1x,
+            img/icon@2x.png 2x" alt="みちめぐ">
+            </div>
+            <p class="catchphrase">日本全国道の駅<br>スタンプラリー</p>
+          </div>
+
+          <div class="app-banner-area flex-box">
+            <div class="img-box app-ss">
+              <img src="./img/mainvisual_app.png" srcset="img/mainvisual_app.png 1x,
+            img/mainvisual_app@2x.png 2x" alt="アプリイメージ">
+            </div>
+            <div class="img-box banner">
+              <a href="#" target="_blank">
+                <img src="../img/PlayStore_banner.png" srcset="../img/PlayStore_banner.png 1x,
+            ../img/PlayStore_banner@2x.png 2x" alt="みちめぐダウンロードバナー">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <section class="about inner">
+      <h1 class="base">みちめぐについて</h1>
+      <div class="flex-box">
+        <div class="description">
+          <p>日本全国道の駅を巡ってスタンプを集める、スタンプラリーアプリです。</p>
+          <p>ドライブやツーリング時に道の駅を巡ってオリジナルスタンプを集めよう！</p>
+          <p>現在地から周辺の道の駅を表示することができるので、旅の途中で休憩スポットを探す際にも役に立ちます。</p>
+        </div>
+        <div class="img-box">
+          <img src="./img/map.png" srcset="./img/map.png 1x,
+        ./img/map@2x.png 2x" alt="マップ">
+        </div>
+    </section>
+
+    <section class="functions">
+      <h1 class="base">みちめぐの機能一覧</h1>
+      <ul id="Slider">
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_register_spot.png" srcset="./img/ss_register_spot.png 1x,
+    ./img/ss_register_spot@2x.png 2x" alt="訪問した道の駅を記録">
+          </div>
+          <p>訪問した道の駅を記録</p>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_show_spotlist.png" srcset="./img/ss_show_spotlist.png 1x,
+    ./img/ss_show_spotlist@2x.png 2x" alt="道の駅をマップに一覧表示">
+          </div>
+          <p>道の駅をマップに一覧表示</p>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_stamp.png" srcset="./img/ss_stamp.png 1x,
+    ./img/ss_stamp@2x.png 2x" alt="都道府県を制覇して、みちめぐオリジナルスタンプGET！">
+          </div>
+          <p>都道府県を制覇して、みちめぐオリジナルスタンプGET！</p>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_mypage.png" srcset="./img/ss_mypage.png 1x,
+    ./img/ss_mypage@2x.png 2x" alt="訪問記録を詳細表示">
+          </div>
+          <p>地域、都道府県別に訪問記録を詳細表示</p>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_detail_spot.png" srcset="./img/ss_detail_spot.png 1x,
+    ./img/ss_detail_spot@2x.png 2x" alt="全国、地域、都道府県別にランキング表示">
+          </div>
+          <p>全国、地域、都道府県別にランキング表示</p>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="./img/ss_ranking.png" srcset="./img/ss_ranking.png 1x,
+    ./img/ss_ranking@2x.png 2x" alt="各道の駅の訪問状況を一覧表示">
+          </div>
+          <p>各道の駅の訪問状況を一覧表示</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="app-download-area">
+      <div class="inner">
+        <h1 class="base">今すぐアプリをダウンロード</h1>
+        <div class="icon">
+          <img src="./img/icon.png" srcset="img/icon.png 1x,
+        img/icon@2x.png 2x" alt="みちめぐ">
+        </div>
+
+        <div class="img-box banner">
+          <a href="#" target="_blank">
+            <img src="../img/PlayStore_banner.png" srcset="../img/PlayStore_banner.png 1x,
+        ../img/PlayStore_banner@2x.png 2x" alt="みちめぐダウンロードバナー">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links inner flex-box">
+      <div class="img-box">
+        <a href="./">
+          <img class="store-banner" src="./img/icon.png" srcset="./img/icon.png 1x,
+                ./img/icon@2x.png 2x" alt="みちめぐアイコン"></a>
+      </div>
+
+      <ul class="about-mokuchoki">
+        <li class="title">
+          みちめぐについて
+        </li>
+        <li>
+          <a href="./privacypolicy.html">プライバシーポリシー</a>
+        </li>
+      </ul>
+
+      <ul class="about-developper">
+        <li class="title">
+          開発者について
+        </li>
+        <li>
+          <a href="../../">トップページ</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="inner">
+        <p class="copyright">copyright みちめぐ</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
