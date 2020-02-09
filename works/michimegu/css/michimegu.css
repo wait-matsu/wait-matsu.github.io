@@ -35,6 +35,10 @@ h2.base::before {
   font-size: 0.75em;
 }
 
+a.page-top {
+  background-color: #6cbf5e;
+}
+
 /* Layout
    ============================================ */
 
