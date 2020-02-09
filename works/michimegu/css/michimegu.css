@@ -326,8 +326,15 @@ footer a:hover {
   }
 
   .main-visual .app-ss {
-    max-width: 40%;
+    max-width: 35%;
     bottom: -8vw;
+  }
+
+  /* みちめぐの機能一覧
+     ---------------------------------------- */
+
+  #Slider .slick-arrow {
+    top: 40%;
   }
 
 }
