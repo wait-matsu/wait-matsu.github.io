@@ -303,6 +303,46 @@ footer a:hover {
   font-size: 15px;
 }
 
+/* プライバシーポリシー
+   ============================================ */
+
+   .privacy-policy h1.base {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .privacy-policy h2 {
+    margin-top: 30px;
+    font-size: var(--fz-h2);
+  }
+  
+  .privacy-policy .terms {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+  }
+  
+  .privacy-policy .terms p {
+    margin-bottom: 10px;
+  }
+  
+  .privacy-policy .terms a {
+    color: rgb(59, 93, 204);
+  }
+  
+  .privacy-policy .terms a:hover {
+    color: rgb(104, 135, 240);
+  }
+  
+  .privacy-policy .terms .start, 
+  .privacy-policy .terms .update {
+    text-align: right;
+  }
+  
+  .privacy-policy .terms .start {
+    margin-bottom: 5px;
+  }
+
 /* ============================================
    タブレット
    ============================================ */
