@@ -92,7 +92,7 @@ main>section>h1.base {
 .main-visual {
   position: relative;
   height: 70vh;
-  min-height: 550px;
+  min-height: 650px;
   padding: 5vh 0;
   background: url(../img/main_visual.png) no-repeat center;
   background-size: cover;
@@ -111,7 +111,7 @@ main>section>h1.base {
 
 .main-visual .app-banner-area {
   position: relative;
-  height: calc(70vh - 200px);
+  height: calc(650px - 200px);
   padding-left: 400px;
 }
 
