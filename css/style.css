@@ -114,6 +114,10 @@ main .inner>section[class] {
   opacity: 0.7;
 }
 
+.works .app a figure img {
+  width: 200px;
+}
+
 .works .app a figcaption {
   margin-top: 10px;
   text-align: center;
