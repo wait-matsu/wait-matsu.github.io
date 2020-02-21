@@ -9,4 +9,4 @@ https://wait-matsu.github.io/
 https://wait-matsu.github.io/works/mokuchoki/
 
 ### みちめぐ
-https://play.google.com/store/apps/details?id=michimegu.com
+https://wait-matsu.github.io/works/michimegu/
