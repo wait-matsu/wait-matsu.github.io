@@ -247,13 +247,21 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-.privacy-policy .terms .start, 
+.privacy-policy .terms .start,
 .privacy-policy .terms .update {
   text-align: right;
 }
 
 .privacy-policy .terms .start {
   margin-bottom: 5px;
+}
+
+.privacy-policy .terms a {
+  color: rgb(59, 93, 204);
+}
+
+.privacy-policy .terms a:hover {
+  color: rgb(104, 135, 240);
 }
 
 /* ============================================
