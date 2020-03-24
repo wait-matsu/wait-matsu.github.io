@@ -25,13 +25,15 @@
 </head>
 
 <body>
-  <main class="inner">
+  <main>
     <div class="visual">
-      <img src="./img/MainVisual.png" srcset="./img/MainVisual.png 1x,
+      <img class="pc" src="./img/MainVisual.png" srcset="./img/MainVisual.png 1x,
         ./img/MainVisual@2x.png 2x" alt="メインビジュアル">
+      <img class="sp" src="./img/MainVisualSp.png" srcset="./img/MainVisualSp.png 1x,
+        ./img/MainVisualSp@2x.png 2x" alt="メインビジュアル">
     </div>
 
-    <section class="about">
+    <section class="about inner">
       <h1 class="base">機能概要</h1>
       <div class="flex-box">
         <div class="img-box">
@@ -45,7 +47,7 @@
       </div>
     </section>
 
-    <section class="how-to-use">
+    <section class="how-to-use inner">
       <h1 class="base">使い方</h1>
       <section class="how-to-write">
         <h2>メモの記録方法</h2>
@@ -69,7 +71,7 @@
                 <br>②：記事のタイトル
                 <br>③：記事の本文
                 <br>④：記事を公開するかどうか
-                <br>　　非公開の場合はマップに表示されません。
+                <br>※非公開の場合はマップに表示されません。
                 <br>※記事はあとから削除することはできますが、一度書いた文章を編集することはできません。</p>
             </div>
           </li>
