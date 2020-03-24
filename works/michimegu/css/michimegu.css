@@ -257,6 +257,51 @@ main section.about {
   display: inline-block;
 }
 
+/* お知らせ
+   ---------------------------------------- */
+.news-area .news {
+  margin-top: 30px;
+  max-height: 500px;
+  overflow: auto;
+}
+.news-area a {
+  color: rgb(105, 172, 94);
+  transition: 0.2s;
+}
+.news-area a:hover {
+  opacity: 0.7;
+}
+
+.news-area .news li {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+
+.news-area .news li:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.news-area .news li time {
+  font-weight: bold;
+}
+
+.news-area .news li .tag {
+  width: 100px;
+  margin-left: 20px;
+  padding: 2px 0;
+  border: 1px solid #707070;
+  font-size: 14px;
+  text-align: center;
+}
+
+.news-area .news li .title-area {
+  max-width: calc(100% - 230px);
+  margin-left: 20px;
+}
+
+
 /* footer
    ============================================ */
 
@@ -469,6 +514,17 @@ footer a:hover {
   .app-download-area .img-box.banner img {
     width: 220px;
   }
+
+  /* お知らせ
+   ---------------------------------------- */
+   .news-area .news li {
+     flex-wrap: wrap;
+   }
+   .news-area .news li .title-area{
+     width: 100%;
+     margin-top: 10px;
+     margin-left: 0;
+   }
 
   /* footer
      ============================================ */

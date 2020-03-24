@@ -14,16 +14,18 @@
   <!-- <link rel="shortcut icon" href="./favicon.ico"> -->
   <link rel="stylesheet" href="./css/michimegu.css">
 
-  <!-- 共通 -->
-  <script src="../../common/js/common.js" defer></script>
+  <!-- みちめぐ共通 -->
+  <script src="./js/common.js"></script>
   <!-- ライブラリ -->
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   <script src="./js/slider.js"></script>
+
+  <!-- 共通 -->
+  <script src="../../common/js/common.js" defer></script>
+  <!-- ページ固有 -->
+  <script src="./js/news.js"></script>
 
   <title>みちめぐ - 日本全国道の駅巡りスタンプラリー</title>
 </head>
@@ -71,6 +73,7 @@
           <img src="./img/map.png" srcset="./img/map.png 1x,
         ./img/map@2x.png 2x" alt="マップ">
         </div>
+      </div>
     </section>
 
     <section class="functions">
@@ -152,41 +155,15 @@
       </div>
     </section>
 
+    <!-- <section class="news-area inner">
+      <h1 class="base">お知らせ</h1>
+      <ul class="news"></ul>
+    </section> -->
+
   </main>
-
-  <footer>
-    <div class="footer-links inner flex-box">
-      <div class="img-box">
-        <a href="./">
-          <img class="store-banner" src="./img/icon.png" srcset="./img/icon.png 1x,
-                ./img/icon@2x.png 2x" alt="みちめぐアイコン"></a>
-      </div>
-
-      <ul class="about-mokuchoki">
-        <li class="title">
-          みちめぐについて
-        </li>
-        <li>
-          <a href="./privacypolicy.html">プライバシーポリシー</a>
-        </li>
-      </ul>
-
-      <ul class="about-developper">
-        <li class="title">
-          開発者について
-        </li>
-        <li>
-          <a href="../../">トップページ</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="inner">
-        <p class="copyright">copyright みちめぐ</p>
-      </div>
-    </div>
-  </footer>
+  <script>
+    loadFooter();
+  </script>
 </body>
 
 </html>

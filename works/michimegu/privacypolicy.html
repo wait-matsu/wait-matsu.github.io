@@ -15,6 +15,8 @@
 
   <!-- 共通 -->
   <script src="../../common/js/common.js" defer></script>
+    <!-- みちめぐ共通 -->
+    <script src="./js/common.js"></script>
   <!-- ライブラリ -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <title>プライバシーポリシー | みちめぐ</title>
@@ -159,39 +161,9 @@
     </div>
   </main>
 
-  <footer>
-    <div class="footer-links inner flex-box">
-      <div class="img-box">
-        <a href="./">
-          <img class="store-banner" src="./img/icon.png" srcset="./img/icon.png 1x,
-                ./img/icon@2x.png 2x" alt="みちめぐアイコン"></a>
-      </div>
-
-      <ul class="about-michimegu">
-        <li class="title">
-          みちめぐについて
-        </li>
-        <li>
-          <a href="./privacypolicy.html">プライバシーポリシー</a>
-        </li>
-      </ul>
-
-      <ul class="about-developper">
-        <li class="title">
-          開発者について
-        </li>
-        <li>
-          <a href="../../">トップページ</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="inner">
-        <p class="copyright">copyright みちめぐ</p>
-      </div>
-    </div>
-  </footer>
+  <script>
+    loadFooter();
+  </script>
 </body>
 
 </html>
