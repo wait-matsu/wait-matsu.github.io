@@ -19,8 +19,25 @@
   content: "■";
 }
 
+.how-to-use ol li {
+  position: relative;
+}
+
 .how-to-use ol li+li {
-  margin-top: 30px;
+  margin-top: 70px;
+}
+
+.how-to-use ol li+li::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border-top: 20px solid;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
 }
 
 .how-to-use section .flex-box {
