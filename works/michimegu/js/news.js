@@ -8,7 +8,7 @@ $(function () {
     202020324: {
       date: '2020.03.24',
       genre: 'news',
-      title: '<a href="./functions/local-memo/">道の駅にメモを残せる機能</a>が追加されました。',
+      title: '<a href="./functions/local-memo/">道の駅にメモを残せる「ローカルメモ」機能</a>が追加されました。',
       url: ''
     }
   }
