@@ -5,6 +5,12 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020329: {
+      date: '2020.03.29',
+      genre: 'news',
+      title: '<a href="./functions/trophy/">トロフィー</a>が追加されました。',
+      url: ''
+    },
     202020324: {
       date: '2020.03.24',
       genre: 'news',
@@ -14,7 +20,7 @@ $(function () {
   }
 
   let newsDOM = ``;
-  for (const newsId of Object.keys(newsList)) {
+  for (const newsId of Object.keys(newsList).reverse()) {
     newsDOM += `<li>
 <time datetime="${newsList[newsId].date.replace('.', '-')}">${newsList[newsId].date}</time>
 <span class="tag">${newsGenre[newsList[newsId].genre]}</span>
