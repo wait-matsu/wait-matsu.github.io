@@ -5,16 +5,22 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020405: {
+      date: '2020.04.05',
+      genre: 'update',
+      title: '【ver1.5.0】フレンド機能が追加されました。',
+      url: ''
+    },
     202020329: {
       date: '2020.03.29',
-      genre: 'news',
-      title: '<a href="./functions/trophy/">トロフィー</a>が追加されました。',
+      genre: 'update',
+      title: '【ver1.4.0】<a href="./functions/trophy/">トロフィー</a>が追加されました。',
       url: ''
     },
     202020324: {
       date: '2020.03.24',
-      genre: 'news',
-      title: '<a href="./functions/local-memo/">道の駅にメモを残せる「ローカルメモ」機能</a>が追加されました。',
+      genre: 'update',
+      title: '【ver1.3.0】<a href="./functions/local-memo/">道の駅にメモを残せる「ローカルメモ」機能</a>が追加されました。',
       url: ''
     }
   }
