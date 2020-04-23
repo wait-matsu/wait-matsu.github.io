@@ -127,14 +127,14 @@ a.page-top.is-not-visible {
 .flex-box.left-4col::before {
   content: "";
   display: block;
-  width: 25%;
+  width: 20%;
   order: 1;
 }
 
 .flex-box.left-4col::after {
   content: "";
   display: block;
-  width: 25%;
+  width: 20%;
 }
 
 

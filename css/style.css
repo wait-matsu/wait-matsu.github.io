@@ -98,6 +98,19 @@ main .inner>section[class] {
 }
 
 
+/* Skill
+   ---------------------------------------- */
+   .skill .technology {
+     margin-top: 40px;
+   }
+   .skill .technology.flex-box {
+     justify-content: flex-start;
+   }
+   .skill .technology li {
+     margin: 10px;
+   }
+
+
 /* Works
    ---------------------------------------- */
 
@@ -105,12 +118,12 @@ main .inner>section[class] {
   margin-top: 40px;
 }
 
-.works .app li {
+.works .app>li figure {
   width: 200px;
   transition: 0.3s;
 }
 
-.works .app li:hover {
+.works .app figure:hover {
   opacity: 0.7;
 }
 
@@ -121,7 +134,7 @@ main .inner>section[class] {
 .works .app a figcaption {
   margin-top: 10px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
@@ -186,8 +199,12 @@ main .inner>section[class] {
     margin-top: 30px;
   }
 
-  .works .app li {
+  .works .app>li {
     width: 46%;
+  }
+
+  .works .app>li figure {
+    width: 100%;
   }
 
 }
