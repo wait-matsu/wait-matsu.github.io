@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020506: {
+      date: '2020.05.06',
+      genre: 'update',
+      title: '【ver1.6.0】<a href="./functions/route/">作成したルートを保存</a>する機能が追加されました。',
+    },
     202020503: {
       date: '2020.05.03',
       genre: 'update',
