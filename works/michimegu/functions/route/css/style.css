@@ -1,0 +1,75 @@
+.description>p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.visual img {
+  margin: auto;
+}
+
+.how-to-use>section {
+  margin-top: 40px;
+}
+
+.how-to-use h2 {
+  margin-bottom: 30px;
+}
+
+.how-to-use h2::before {
+  content: "■";
+}
+
+.how-to-use ol li {
+  position: relative;
+}
+
+.how-to-use ol li+li {
+  margin-top: 70px;
+}
+
+.how-to-use ol li+li::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border-top: 20px solid;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.how-to-use section .flex-box {
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.how-to-use section .description {
+  width: calc(100% - 200px - 3vw);
+}
+
+/* ============================================
+   タブレット
+   ============================================ */
+
+@media screen and (max-width: 1000px) {}
+
+/* ============================================
+   スマートフォン
+   ============================================ */
+
+@media screen and (max-width: 560px) {
+
+  main section.about {
+    margin-top: 60px;
+  }
+
+  .how-to-use ol .img-box {
+    max-width: 40%;
+  }
+
+  .how-to-use section .description {
+    width: calc(100% - 45%);
+  }
+}
