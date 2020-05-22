@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020519: {
+      date: '2020.05.19',
+      genre: 'update',
+      title: '【ver1.6.1】マイページにトロフィーの獲得総数が表示されるようになりました。',
+    },
     202020506: {
       date: '2020.05.06',
       genre: 'update',
