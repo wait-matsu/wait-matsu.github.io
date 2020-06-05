@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020605: {
+      date: '2020.06.05',
+      genre: 'update',
+      title: '【ver1.6.5】新たに道の駅が13件追加されました。',
+    },
     202020519: {
       date: '2020.05.19',
       genre: 'update',
