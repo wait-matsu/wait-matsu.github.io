@@ -50,7 +50,7 @@
   border-spacing: 0;
 }
 
-.trophy-list table tr>*{
+.trophy-list table tr>* {
   padding: 10px 20px;
   border-bottom: 1px solid rgb(209, 184, 44);
 }
@@ -85,18 +85,15 @@
     margin-top: 60px;
   }
 
-  .about .img-box {
-    width: 40%;
-  }
 
   .about .description.balloon {
-    width: 55%;
+    margin-top: 40px;
   }
 
   .description.balloon::before {
-    top: 10px;
-    left: -75px;
-    transform: translateY(0);
+    top: -42px;
+    left: -17px;
+    transform: translateY(0) rotate(90deg);
     z-index: -1;
   }
 
@@ -117,7 +114,7 @@
     width: 100%;
   }
 
-  .trophy-list table tr>*{
+  .trophy-list table tr>* {
     padding: 7px 13px;
   }
 }
