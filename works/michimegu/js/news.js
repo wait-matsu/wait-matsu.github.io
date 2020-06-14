@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020615: {
+      date: '2020.06.15',
+      genre: 'event',
+      title: '【イベント開催予告】<a href="./events/treasure-hunt01/">宝探しゲーム開催のお知らせ</a>',
+    },
     202020605: {
       date: '2020.06.05',
       genre: 'update',
