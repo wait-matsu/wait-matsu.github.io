@@ -175,7 +175,7 @@ a.page-top.is-not-visible {
 
   .hamburger-menu {
     position: relative;
-    width: 35px;
+    width: 30px;
     height: 35px;
     margin-right: 5px;
   }
@@ -184,7 +184,7 @@ a.page-top.is-not-visible {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: #505050;
     border-radius: 4px;
   }
