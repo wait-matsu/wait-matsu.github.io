@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020823: {
+      date: '2020.08.23',
+      genre: 'update',
+      title: '【ver1.7.4】アップデートが配信されました。（リリースノートはアプリからご確認ください）',
+    },
     202020816: {
       date: '2020.08.16',
       genre: 'update',

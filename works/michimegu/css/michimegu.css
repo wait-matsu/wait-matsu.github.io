@@ -57,7 +57,7 @@ a.page-top {
 }
 
 .description p+p {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 /* Effect
@@ -261,13 +261,15 @@ main section.about {
    ---------------------------------------- */
 .news-area .news {
   margin-top: 30px;
-  max-height: 400px;
+  max-height: 350px;
   overflow: auto;
 }
+
 .news-area a {
   color: rgb(105, 172, 94);
   transition: 0.2s;
 }
+
 .news-area a:hover {
   opacity: 0.7;
 }
@@ -275,7 +277,7 @@ main section.about {
 .news-area .news li {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding: 30px 0;
   border-top: 1px solid #ccc;
 }
 
@@ -517,15 +519,16 @@ footer a:hover {
 
   /* お知らせ
    ---------------------------------------- */
-   .news-area .news li {
-     flex-wrap: wrap;
-   }
-   .news-area .news li .title-area{
-     width: 100%;
-     max-width: 100%;
-     margin-top: 10px;
-     margin-left: 0;
-   }
+  .news-area .news li {
+    flex-wrap: wrap;
+  }
+
+  .news-area .news li .title-area {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
 
   /* footer
      ============================================ */
