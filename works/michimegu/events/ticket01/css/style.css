@@ -1,3 +1,23 @@
+.corona-notice {
+  padding: 20px 25px;
+  color: #E13232;
+  border: 1px solid #E13232;
+  background-color: #FFEAEA;
+}
+
+.corona-notice>h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.corona-notice a {
+  border-bottom: 1px solid #E13232;
+}
+
+.corona-notice a:hover {
+  border-bottom: none;
+}
+
 .description>p {
   font-size: 18px;
   line-height: 1.8;
