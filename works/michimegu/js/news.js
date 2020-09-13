@@ -5,6 +5,16 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202020913: {
+      date: '2020.09.13',
+      genre: 'event',
+      title: '【イベント開催予告】<a href="./events/ticket01/">みちめぐ切符イベント開催のお知らせ</a>',
+    },
+    202020912: {
+      date: '2020.09.12',
+      genre: 'update',
+      title: '【ver1.7.8】アップデートが配信されました。（リリースノートはアプリからご確認ください）',
+    },
     202020830: {
       date: '2020.08.30',
       genre: 'update',
