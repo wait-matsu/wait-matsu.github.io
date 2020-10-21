@@ -5,6 +5,11 @@ $(function () {
     'event': 'イベント',
   }
   const newsList = {
+    202021022: {
+      date: '2020.10.22',
+      genre: 'event',
+      title: '【イベント開催予告】<a href="./events/halloween/">ハロウィーン限定かぼちゃのトロフィーをゲットしよう！</a>',
+    },
     202020926: {
       date: '2020.09.26',
       genre: 'update',
