@@ -83,6 +83,10 @@ main .inner > section[class] {
   width: 18%;
 }
 
+.profile-area .icon > img {
+  border-radius: 50%;
+}
+
 .profile-area .profile {
   width: 80%;
 }
