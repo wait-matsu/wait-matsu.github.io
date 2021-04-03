@@ -40,14 +40,13 @@ h2.top::before {
   height: calc(var(--fz-h2) * 1.2);
   margin-right: 5px;
   border-radius: 50%;
-  color: #2C9CDD;
-  border: 1px solid #2C9CDD;
+  color: #2c9cdd;
+  border: 1px solid #2c9cdd;
   font-size: 0.75em;
 }
 
 /* Layout
    ============================================ */
-
 
 /* メインコンテンツ
    ============================================ */
@@ -56,7 +55,7 @@ main {
   padding-bottom: 60px;
 }
 
-main .inner>section[class] {
+main .inner > section[class] {
   margin-top: 60px;
 }
 
@@ -97,19 +96,17 @@ main .inner>section[class] {
   letter-spacing: 3px;
 }
 
-
 /* Skill
    ---------------------------------------- */
-   .skill .technology {
-     margin-top: 40px;
-   }
-   .skill .technology.flex-box {
-     justify-content: flex-start;
-   }
-   .skill .technology li {
-     margin: 10px;
-   }
-
+.skill .technology {
+  margin-top: 40px;
+}
+.skill .technology.flex-box {
+  justify-content: flex-start;
+}
+.skill .technology li {
+  margin: 10px;
+}
 
 /* Works
    ---------------------------------------- */
@@ -118,7 +115,11 @@ main .inner>section[class] {
   margin-top: 40px;
 }
 
-.works .app>li figure {
+.works .app > li {
+  margin-top: 20px;
+}
+
+.works .app > li figure {
   width: 200px;
   transition: 0.3s;
 }
@@ -137,24 +138,21 @@ main .inner>section[class] {
   font-size: 20px;
 }
 
-
 /* ============================================
    スマートフォン
    ============================================ */
 
 @media screen and (max-width: 560px) {
-
   /* 変数
    ============================================ */
   :root {
     --fz-h1: 30px;
   }
 
-
   /* メインコンテンツ
      ============================================ */
 
-  main .inner>section[class] {
+  main .inner > section[class] {
     margin-top: 40px;
     text-align: center;
   }
@@ -191,7 +189,6 @@ main .inner>section[class] {
     font-size: 22px;
   }
 
-
   /* Works
      ---------------------------------------- */
 
@@ -199,12 +196,11 @@ main .inner>section[class] {
     margin-top: 30px;
   }
 
-  .works .app>li {
+  .works .app > li {
     width: 46%;
   }
 
-  .works .app>li figure {
+  .works .app > li figure {
     width: 100%;
   }
-
 }
