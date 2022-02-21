@@ -39,7 +39,7 @@ header .global-menu li:not(.sns) a::after {
   position: absolute;
   bottom: -4px;
   left: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background: #505050;
@@ -52,7 +52,7 @@ header .global-menu li:not(.sns) a:hover::after {
   transform: scale(1, 1);
 }
 
-header .global-menu li+li {
+header .global-menu li + li {
   margin-left: 3vw;
 }
 
@@ -62,7 +62,7 @@ header .global-menu li i {
   transition: 0.3s;
 }
 
-header .global-menu li.sns+li.sns {
+header .global-menu li.sns + li.sns {
   margin-left: 1vw;
 }
 
@@ -124,6 +124,13 @@ a.page-top.is-not-visible {
   flex-wrap: wrap;
 }
 
+.flex-box.left-3col::before {
+  content: "";
+  display: block;
+  width: 20%;
+  order: 1;
+}
+
 .flex-box.left-4col::before {
   content: "";
   display: block;
@@ -137,13 +144,11 @@ a.page-top.is-not-visible {
   width: 20%;
 }
 
-
 /* ============================================
    タブレット
    ============================================ */
 
 @media screen and (max-width: 1000px) {
-
   /* Responsive
    ============================================ */
   .pc {
@@ -213,7 +218,7 @@ a.page-top.is-not-visible {
     transform: translateY(-11px) rotate(45deg);
   }
 
-  .hamburger-menu+.global-menu {
+  .hamburger-menu + .global-menu {
     position: absolute;
     top: 66px;
     left: 0;
@@ -223,11 +228,11 @@ a.page-top.is-not-visible {
     transition: 0.5s;
   }
 
-  .hamburger-menu.is-active+.global-menu {
+  .hamburger-menu.is-active + .global-menu {
     max-height: 50vh;
   }
 
-  .hamburger-menu+.global-menu li {
+  .hamburger-menu + .global-menu li {
     width: 100%;
     margin-left: 0;
     background-color: rgba(255, 255, 255, 0.95);
@@ -241,12 +246,12 @@ a.page-top.is-not-visible {
     padding: 15px 20px;
   }
 
-  header .global-menu li.sns+li.sns {
+  header .global-menu li.sns + li.sns {
     margin-left: 0;
   }
 
   header .global-menu li.sns a,
-  header .global-menu li.sns+li.sns a {
+  header .global-menu li.sns + li.sns a {
     margin-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -261,7 +266,6 @@ a.page-top.is-not-visible {
     margin-right: 5px;
     padding: 0;
   }
-
 
   /* Layout
      ============================================ */
